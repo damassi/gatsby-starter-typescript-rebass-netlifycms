@@ -6,6 +6,7 @@
 
 import React from "react"
 import styled, { ThemeProvider } from "styled-components"
+import { Button } from "rebass"
 
 export const theme = {
   // TODO: https://rebassjs.org/theming
@@ -22,6 +23,10 @@ const P = styled.div`
 export const LayoutComponents = {
   h1: H1,
   p: P,
+}
+
+export const UIComponents = {
+  Button: props => <Button {...props}>{props.children}</Button>,
 }
 
 export const Theme = ({ children }) => (

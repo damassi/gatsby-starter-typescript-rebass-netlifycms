@@ -36,10 +36,12 @@ module.exports = {
         // Also note: For mdx to work in NetlifyCMS, global scope passed in here
         // also be passed into `cms.js`, under the `scope` key.
         //
-        // globalScope: `
-        //   import * as Components from 'rebass'
-        //   export { Components }
-        //`
+        globalScope: `
+          import { UIComponents } from 'Theme'
+          export default {
+            ...UIComponents
+          }
+        `,
 
         // mdPlugins: [],
         // gatsbyRemarkPlugins: [{}],

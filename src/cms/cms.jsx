@@ -1,8 +1,7 @@
-import { Button } from "rebass"
 import { MdxControl, MdxPreview } from "netlify-cms-widget-mdx"
 import React, { Component } from "react"
 import { StyleSheetManager } from "styled-components"
-import { Theme, LayoutComponents } from "../Theme"
+import { Theme, LayoutComponents, UIComponents } from "../Theme"
 import { FileSystemBackend } from "netlify-cms-backend-fs"
 import CMS, { init } from "netlify-cms"
 
@@ -48,9 +47,8 @@ const PreviewWindow = props => {
     // This key represents html elements used in markdown; h1, p, etc
     components: LayoutComponents,
     // Pass components used in the editor (and shared throughout mdx) here:
-    scope: {
-      Button: props => <Button {...props}>{props.children}</Button>,
-    },
+    scope: UIComponents,
+
     mdPlugins: [],
   }
 
