@@ -100,6 +100,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       // }),
     ],
     resolve: {
+      // Enable absolute import paths
       modules: [path.resolve(__dirname, "src"), "node_modules"],
     },
   })
