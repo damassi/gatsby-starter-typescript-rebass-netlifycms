@@ -61,7 +61,7 @@ function createNode(
     tree.push({
       name,
       // TODO: Pass in transformer callback
-      formattedName: data.name,
+      formattedName: data.title,
       path: fullPath,
       data,
       children: [],

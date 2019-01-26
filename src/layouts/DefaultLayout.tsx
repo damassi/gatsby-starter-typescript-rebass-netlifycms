@@ -1,5 +1,6 @@
-import { Serif } from "components/ui/Typography"
-import { graphql } from "gatsby"
+import { NavTree } from "components/NavTree/NavTree"
+import { Sans, Serif } from "components/ui/Typography"
+import { graphql, Link } from "gatsby"
 import MDXRenderer from "gatsby-mdx/mdx-renderer"
 import React from "react"
 import { Box, Flex } from "rebass"
@@ -16,10 +17,16 @@ export default function DocsLayout(props) {
 
   return (
     <Flex>
+      <Box mr="20px">
+        <Box mb="20px">
+          <Link to="/">
+            <Sans>Home</Sans>
+          </Link>
+        </Box>
+        <NavTree />
+      </Box>
       <Box p={2}>
-        <Serif size="8" color="black100" mb={2}>
-          {title}
-        </Serif>
+        <Serif size="8">{title}</Serif>
         <MDXRenderer>{code.body}</MDXRenderer>
       </Box>
     </Flex>

@@ -165,8 +165,8 @@ const NavLink = styled(NavLinkWrapper)`
   &&.isActive {
     color: purple;
 
-    &:before {
-      content: " – ";
+    &:after {
+      content: " * ";
     }
 
     &:hover {

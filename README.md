@@ -1,14 +1,16 @@
-# Gatsby Starter
+# Barebones Gatsby Starter
 
-- TypeScript
-- Styled Components
-- Rebass
-- MDX
-- NetlifyCMS, with local file-system and MDX support
-- Lint Staged
-- Prettier
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://www.styled-components.com/)
+- [Jest](https://jestjs.io/)
+- [Rebass](https://github.com/rebassjs/rebass)
+- [MDX](https://mdxjs.com/)
+- [NetlifyCMS](https://www.netlifycms.org/), with local file-system and MDX
+  support
+- [Lint Staged](https://github.com/okonet/lint-staged)
+- [Prettier](https://prettier.io/)
 
-## WIP
+Or, all the things I'd typically use.
 
 ### Development
 
@@ -17,9 +19,6 @@ yarn start
 yarn clean
 yarn type-check
 ```
-
-During development Gatsby is booted with `nodemon` so that server-side changes
-are detected and the server restarts.
 
 ### Deployment
 
