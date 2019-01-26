@@ -15,6 +15,18 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
+  - name: mdx
+    label: Mdx Example
+    description: Documentation
+    folder: content/mdx
+    extension: mdx
+    format: frontmatter
+    widget: mdx
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string, required: true }
+      - { label: Body, name: body, widget: mdx }
+
   - name: blog
     label: Blog
     folder: content/blog
@@ -32,15 +44,3 @@ collections:
       - { label: Description, name: description, widget: text }
       - { label: Tags, name: tags, widget: list }
       - { label: Body, name: body, widget: markdown }
-
-  - name: mdx
-    label: Mdx Example
-    description: Documentation
-    folder: content/mdx
-    extension: mdx
-    format: frontmatter
-    widget: mdx
-    create: true
-    fields:
-      - { label: Title, name: title, widget: string, required: true }
-      - { label: Body, name: body, widget: mdx }
