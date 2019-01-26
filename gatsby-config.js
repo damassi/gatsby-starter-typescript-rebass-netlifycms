@@ -1,6 +1,5 @@
 // @ts-check
 
-const fsExpressAPI = require("netlify-cms-backend-fs/dist/fs")
 const playgroundHastPlugin = require("./src/utils/playgroundHastPlugin")
 
 module.exports = {
@@ -9,11 +8,6 @@ module.exports = {
     description: "-- placeholder --",
     author: "damassi.pappas@gmail.com",
   },
-
-  // Add the file-system as an api proxy:
-  // https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
-  developMiddleware: fsExpressAPI,
-
   plugins: [
     {
       resolve: "gatsby-mdx",
