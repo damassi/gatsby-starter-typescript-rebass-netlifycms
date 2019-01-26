@@ -1,9 +1,9 @@
-import { NavTree } from "components/NavTree/NavTree"
-import { Sans, Serif } from "components/ui/Typography"
-import { graphql, Link } from "gatsby"
 import MDXRenderer from "gatsby-mdx/mdx-renderer"
 import React from "react"
 import { Box, Flex } from "rebass"
+import { Link, graphql } from "gatsby"
+import { Sans, Serif } from "components/ui/Typography"
+import { NavTree } from "components/NavTree"
 
 export default function DocsLayout(props) {
   const {

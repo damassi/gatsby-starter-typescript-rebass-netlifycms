@@ -6,7 +6,7 @@ import { LayoutComponents, Theme } from "./Theme"
 // TODO: Need to create gatsby-plugin-react-head
 // import { HeadProvider } from "react-head"
 
-export const Boot = ({ element }) => {
+export const Boot: React.SFC<{ element: any }> = ({ element }) => {
   return (
     <StateProvider>
       <MDXProvider components={LayoutComponents}>

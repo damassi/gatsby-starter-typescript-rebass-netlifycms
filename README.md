@@ -2,9 +2,9 @@
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Styled Components](https://www.styled-components.com/)
-- [Jest](https://jestjs.io/)
 - [Rebass](https://github.com/rebassjs/rebass)
 - [MDX](https://mdxjs.com/)
+- [Jest](https://jestjs.io/)
 - [NetlifyCMS](https://www.netlifycms.org/), with local file-system and MDX
   support
 - [Lint Staged](https://github.com/okonet/lint-staged)

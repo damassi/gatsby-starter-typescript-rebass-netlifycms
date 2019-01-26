@@ -1,31 +1,26 @@
-// @ts-check
-
 import { MdxControl, MdxPreview } from "netlify-cms-widget-mdx"
 import React, { Component } from "react"
 import { StyleSheetManager } from "styled-components"
 import { Theme, LayoutComponents } from "../Theme"
-
-// @ts-ignore
+import { FileSystemBackend } from "netlify-cms-backend-fs"
 import CMS, { init } from "netlify-cms"
 
 const isClient = typeof window !== "undefined"
 const isDevelopment = process.env.NODE_ENV === "development"
 
 if (isClient) {
-  // @ts-ignore
   window.CMS_MANUAL_INIT = true
 }
 
 if (isDevelopment) {
-  // @ts-ignore
   // Allows for local development overrides in cms.yaml
   window.CMS_ENV = "localhost_development"
 
-  CMS.registerBackend(
-    "file-system",
-    require("netlify-cms-backend-fs").FileSystemBackend
-  )
+  // Attach to the file system
+  CMS.registerBackend("file-system", FileSystemBackend)
 }
+
+// @ts-check
 
 // Custom components need refs for validation and thus must be a class.
 // Additionally, after <Theme>, only one child is allowed.
