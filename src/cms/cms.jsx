@@ -54,7 +54,9 @@ const PreviewWindow = props => {
 
   return (
     <StyleSheetManager target={iframeHeadElem}>
-      <MdxPreview mdx={mdxProps} {...props} />
+      <Theme>
+        <MdxPreview mdx={mdxProps} {...props} />
+      </Theme>
     </StyleSheetManager>
   )
 }

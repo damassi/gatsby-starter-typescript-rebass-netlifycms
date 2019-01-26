@@ -10,7 +10,7 @@ backend:
   repo: damassi/gatsby-typescript-netlify-starter
   branch: master
 
-display_url: Gatsby Starter
+display_url: http://localhost:8000
 media_folder: static/assets
 public_folder: assets
 

@@ -4,25 +4,31 @@
  * Since this file is shared with NetlifyCMS it must be .jsx
  */
 
-import React from "react"
-import styled, { ThemeProvider } from "styled-components"
+import React, { Fragment } from "react"
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
 import { Button } from "rebass"
 
 export const theme = {
   // TODO: https://rebassjs.org/theming
 }
 
-const H1 = styled.h1`
-  font-size: 20px;
-`
+const GlobalStyle = createGlobalStyle`
+  html, body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-const P = styled.div`
-  font-size: 16px;
+  h3 {
+    font-family: Arial, Helvetica, sans-serif
+  }
 `
 
 export const LayoutComponents = {
-  h1: H1,
-  p: P,
+  h1: styled.h1`
+    font-size: 20px;
+  `,
+  p: styled.p`
+    font-size: 16px;
+  `,
 }
 
 export const UIComponents = {
@@ -30,5 +36,10 @@ export const UIComponents = {
 }
 
 export const Theme = ({ children }) => (
-  <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  <ThemeProvider theme={theme}>
+    <Fragment>
+      <GlobalStyle />
+      {children}
+    </Fragment>
+  </ThemeProvider>
 )
