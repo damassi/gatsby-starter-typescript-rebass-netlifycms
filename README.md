@@ -26,6 +26,15 @@ yarn type-check
 yarn build
 ```
 
+### Example
+
+<img width="949" alt="screen shot 2019-01-26 at 12 16 13 pm" src="https://user-images.githubusercontent.com/236943/51792329-4b94cd00-2164-11e9-8228-7ed8b4a37afa.png">
+
+<br />
+<br />
+
+<img width="949" alt="screen shot 2019-01-26 at 12 16 02 pm" src="https://user-images.githubusercontent.com/236943/51792330-50598100-2164-11e9-9f3a-0f7189ffe5a5.png">
+
 <details>
   <summary>Gatsby API Details</summary>
 
