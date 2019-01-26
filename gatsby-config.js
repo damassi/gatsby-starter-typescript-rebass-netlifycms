@@ -10,7 +10,7 @@ module.exports = {
     author: "damassi.pappas@gmail.com",
   },
 
-  // Add the file-system api as an api proxy:
+  // Add the file-system as an api proxy:
   // https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
   developMiddleware: fsExpressAPI,
 
@@ -32,7 +32,14 @@ module.exports = {
         // Imports here are available globally to .mdx files, with the exception
         // of automatically created pages located in /pages. This is a bug in
         // gatsby-mdx. See https://github.com/ChristopherBiscardi/gatsby-mdx/issues/243
-        // globalScope: ""
+        //
+        // Also note: For mdx to work in NetlifyCMS, global scope passed in here
+        // also be passed into `cms.js`, under the `scope` key.
+        //
+        // globalScope: `
+        //   import * as Components from 'rebass'
+        //   export { Components }
+        //`
 
         // mdPlugins: [],
         // gatsbyRemarkPlugins: [{}],
