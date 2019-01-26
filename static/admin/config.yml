@@ -33,10 +33,10 @@ collections:
       - { label: Tags, name: tags, widget: list }
       - { label: Body, name: body, widget: markdown }
 
-  - name: docs
-    label: Docs
+  - name: mdx
+    label: Mdx Example
     description: Documentation
-    folder: content/docs
+    folder: content/mdx
     extension: mdx
     format: frontmatter
     widget: mdx

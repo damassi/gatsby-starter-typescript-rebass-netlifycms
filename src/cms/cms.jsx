@@ -1,3 +1,4 @@
+import { Button } from "rebass"
 import { MdxControl, MdxPreview } from "netlify-cms-widget-mdx"
 import React, { Component } from "react"
 import { StyleSheetManager } from "styled-components"
@@ -44,8 +45,12 @@ const PreviewWindow = props => {
   const iframeHeadElem = iframe.contentDocument.head
 
   const mdxProps = {
+    // This key represents html elements used in markdown; h1, p, etc
     components: LayoutComponents,
-    scope: {},
+    // Pass components used in the editor (and shared throughout mdx) here:
+    scope: {
+      Button: props => <Button {...props}>{props.children}</Button>,
+    },
     mdPlugins: [],
   }
 

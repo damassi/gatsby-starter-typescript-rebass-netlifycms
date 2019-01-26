@@ -58,8 +58,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "docs",
-        path: `${__dirname}/content/docs/`,
+        name: "mdx",
+        path: `${__dirname}/content/mdx/`,
       },
     },
     "gatsby-plugin-catch-links",

@@ -8,9 +8,11 @@
 
 const path = require("path")
 const WebpackNotifierPlugin = require("webpack-notifier")
-const WebpackShellPlugin = require("webpack-shell-plugin")
 const { createFilePath } = require("gatsby-source-filesystem")
 const { toLower } = require("lodash")
+
+// TODO: Fix apollo type generation
+// const WebpackShellPlugin = require("webpack-shell-plugin")
 
 /**
  * Intercept and modify the GraphQL schema
