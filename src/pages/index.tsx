@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <StaticQuery
       query={graphql`
-        query {
+        query PagesQuery {
           allMdx {
             edges {
               node {

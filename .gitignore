@@ -10,3 +10,4 @@ typings/
 # Gatsby files
 .cache/
 public
+schema.json
