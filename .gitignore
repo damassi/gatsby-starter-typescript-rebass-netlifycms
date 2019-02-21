@@ -11,3 +11,4 @@ typings/
 .cache/
 public
 schema.json
+schema.graphql
