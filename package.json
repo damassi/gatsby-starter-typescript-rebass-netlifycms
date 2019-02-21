@@ -63,7 +63,7 @@
     "jest": "^24.0.0",
     "lint-staged": "^8.1.0",
     "multer": "^1.4.1",
-    "netlify-cms-backend-fs": "^0.3.4",
+    "netlify-cms-backend-fs": "^0.3.6",
     "nodemon": "^1.18.9",
     "prettier": "^1.15.3",
     "typescript": "^3.2.4",
