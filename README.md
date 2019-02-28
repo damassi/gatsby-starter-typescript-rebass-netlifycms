@@ -12,6 +12,8 @@
 
 Or, all the things I'd typically use.
 
+This starter was extracted from an earlier iteration I completed while working on [Palette](https://palette.artsy.net), Artsy's design system. Check out the docs site for a more full-featured example (including some interesting live-coding capabilities) or the [source-code](https://github.com/artsy/palette/tree/master/www). 
+
 ### Development
 
 ```sh
