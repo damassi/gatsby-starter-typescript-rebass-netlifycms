@@ -10,7 +10,11 @@
 - [Lint Staged](https://github.com/okonet/lint-staged)
 - [Prettier](https://prettier.io/)
 
-This starter was extracted from an earlier iteration I completed while working on [Palette](https://palette.artsy.net), Artsy's design system. Check out the [docs site](https://palette.artsy.net/) for a more full-featured example (including some interesting live-coding capabilities) or the [source-code](https://github.com/artsy/palette/tree/master/www). 
+This starter was extracted from an earlier iteration I completed while working
+on [Palette](https://palette.artsy.net), Artsy's design system. Check out the
+[docs site](https://palette.artsy.net/) for a more full-featured example
+(including some interesting live-coding capabilities) or the
+[source-code](https://github.com/artsy/palette).
 
 ### Development
 
