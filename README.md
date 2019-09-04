@@ -24,6 +24,8 @@ yarn clean
 yarn type-check
 ```
 
+> Please note that Yarn is required, as NPM may not install dependencies correctly, causing issues for development.
+
 ### Deployment
 
 ```sh
