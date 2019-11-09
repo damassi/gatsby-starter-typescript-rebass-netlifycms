@@ -68,5 +68,7 @@ module.exports = {
     "gatsby-plugin-catch-links",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-typescript",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
   ],
 }
