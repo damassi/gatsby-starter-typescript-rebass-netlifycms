@@ -95,7 +95,7 @@
     "marked": "^0.6.0",
     "netlify-cms": "^2.3.3",
     "netlify-cms-widget-mdx": "^0.3.1",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.27.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
